@@ -6,15 +6,6 @@ const getElementById = function(root, id) {
   //console.log(flattenedArray)
   let filteredArray = _.filter(flattenedArray, (el) => el.id === id );
   return filteredArray[0];
-
-
-/*  let flattened = flattenTreeToArray(root, id);
-  console.log(flattened)
-  let index = _.indexOf(flattened, id);
-  return flattened[index];
-
-  */
-  // Your code here
 };
 
 const getElementsByClassName = function(root, className) {
