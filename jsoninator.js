@@ -12,9 +12,13 @@ const stringify = function(obj) {
 
     // Arrays
 
-    if (typeof(obj) === 'number' || typeof(obj) === 'boolean' || obj === null) {
-        return '' + obj;
-    } else if (typeof obj === 'string') {
+    if (typeof(obj) === 'number') {
+      return '' + obj + '';
+    } else if (typeof(obj) === 'boolean') {
+      return '' + obj + '';
+    } else if (obj === null) {
+      return '' + obj + ''
+    } else if (typeof(obj) === 'string') {
         return '"' + obj + '"';
     } else if (Array.isArray(obj)) {
         if (obj[0] === undefined)
